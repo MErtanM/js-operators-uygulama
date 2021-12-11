@@ -75,16 +75,23 @@ Take inputs from the user (the day and the time)  and return output whether is o
 const day = prompt("Enter the day:")
 const time = prompt("Enter the time:")
 
-/*
- if(day !="Saturday" && day != "Sunday" && (time >= 10 && time <= 21)) {
+if(day !="Monday" && day != "Tuesday" && day != "Wednesday" && day != "Thursday" && day != "Friday" && 
+day != "Saturday" && day != "Sunday") {
+alert("Pleas enter valid day")
 
-    console.log('Open')
- }else{
-     console.log("Close")
+}else{
+    if(day !="Saturday" && day != "Sunday" && (time >= 10 && time <= 21)) {
+
+        console.log('Open')
+     }else{
+         console.log("Close")
+
+
+}
+ 
  }
 
 
-*/
 
 
 
@@ -93,6 +100,7 @@ const time = prompt("Enter the time:")
 
 
 
+/*
 if(hour <= 21 && hour >= 10 ) {
     switch (day) {
 
@@ -119,4 +127,4 @@ case ("friday"):
              console.log("CLOSED")
          }
 
-     
+     */
