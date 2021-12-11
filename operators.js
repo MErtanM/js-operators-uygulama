@@ -13,13 +13,7 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
-/*
 
-Take inputs from the user (the day and the time)  and return output whether is open or closed.
-// Open -> Monday to Friday, 10-21 
-// Close -> all weekend
-
-*/
 //1
 
 const avgDolphins = (96 +108 + 89 ) / 3
@@ -69,3 +63,60 @@ console.log("Winner is Dolphins")
 
 
 
+//uygulama2
+/*
+
+Take inputs from the user (the day and the time)  and return output whether is open or closed.
+// Open -> Monday to Friday, 10-21 
+// Close -> all weekend
+
+*/
+
+const day = prompt("Enter the day:")
+const time = prompt("Enter the time:")
+
+/*
+ if(day !="Saturday" && day != "Sunday" && (time >= 10 && time <= 21)) {
+
+    console.log('Open')
+ }else{
+     console.log("Close")
+ }
+
+
+*/
+
+
+
+
+
+
+
+
+if(hour <= 21 && hour >= 10 ) {
+    switch (day) {
+
+case ("monday"):
+        console.log("Open")
+        break
+case ("tuesday"):
+        console.log("Open")
+        break
+case ("wednesday"):
+        console.log("Open")
+        break
+case ("thursday"):
+        console.log("Open")
+        break
+case ("friday"):
+        console.log("Open")
+        break
+        default:
+            console.log("CLOSED")
+            break
+    }
+         }else{
+             console.log("CLOSED")
+         }
+
+     
